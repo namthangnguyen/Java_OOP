@@ -1,4 +1,4 @@
-package exercise.learning;
+package learning;
 
 public class Konstructer {
     private String name;
@@ -7,8 +7,8 @@ public class Konstructer {
 
     public Konstructer() { }
 
-    // Tạo một Constructer sẽ làm mất Constructer mặc định của JVM, nếu muốn có
-    // Default Constructer (là Constructer không tham số) thì phải khai báo như trên
+    // Tạo một Constructer sẽ làm mất Constructer mặc định của JVM,
+    // khi đó nếu muốn có Constructer mặc định (là Constructer không tham số) thì phải khai báo
     // (được khuyến khích khi đã tự tạo một Constructer)
     public Konstructer(String name, int age, boolean isMale) {
         this.name = name;
@@ -21,7 +21,7 @@ public class Konstructer {
     }
 
     public static void main(String[] args) {
-        // thử xóa cái khai báo
+        // Thiếu Constructer mặc định sẽ báo lỗi
         Konstructer test = new Konstructer();
         test.info();
     }

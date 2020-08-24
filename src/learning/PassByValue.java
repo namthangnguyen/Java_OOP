@@ -1,4 +1,4 @@
-package exercise.learning;
+package learning;
 
 class Student {
     private int year;
